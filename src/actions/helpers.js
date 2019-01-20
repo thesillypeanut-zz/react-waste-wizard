@@ -18,3 +18,19 @@ export const unsetStateByPath = action(({ commit, state }, ...paths) => {
   }
   commit(state);
 });
+
+const responseToJSON = response => response.json();
+
+const handleException = (exception) => {
+  throw exception;
+};
+
+export const handleResponse = (response, overrideExceptionHandling = false) =>
+  response
+    .then(responseToJSON)
+    .catch((exception) => {
+      if (!overrideExceptionHandling) {
+        handleException(exception);
+      }
+      throw exception;
+    });

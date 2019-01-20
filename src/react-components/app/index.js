@@ -1,32 +1,27 @@
 import React from 'react';
+
+import { AppHeader } from '../app-header';
+import { BaseReactComponent } from '../base-react-component';
+import { SearchBar } from '../search-bar';
+import { SearchResults } from '../search-results';
+
 import './styles.css';
 
-import { BaseReactComponent } from '../base-react-component';
 
-class App extends BaseReactComponent {
+export default class App extends BaseReactComponent {
   filterState() {
     return {};
   }
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <AppHeader />
+        <section className="app__container">
+          <SearchBar />
+          <SearchResults />
+        </section>
       </div>
     );
   }
-}
-
-export default App;
+};

@@ -1,0 +1,15 @@
+.app-header:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.app-header {
+    background-image: linear-gradient(to right, #075794,#009C61);
+    height: 125px;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
