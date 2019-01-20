@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Waste Wizard",
+  "name": "React Waste Wizard App",
   "icons": [
     {
       "src": "favicon.ico",

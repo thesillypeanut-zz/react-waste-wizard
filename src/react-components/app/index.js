@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles.css';
 
-class App extends Component {
+import { BaseReactComponent } from '../base-react-component';
+
+class App extends BaseReactComponent {
+  filterState() {
+    return {};
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
