@@ -5,7 +5,7 @@ A single-page web app to search for waste items using the Toronto Waste Wizard d
 ## Getting Started
 ```bash
 # Clone this repository and cd into it:
-git clone 
+git clone https://github.com/thesillypeanut/react-waste-wizard.git 
 cd react-waste-wizard/
 
 # Start the server:
