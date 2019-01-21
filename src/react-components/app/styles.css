@@ -1,4 +1,14 @@
+.app {
+    height: 100%;
+}
+
 .app__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.app__search {
     padding: 16px;
 }
   

@@ -9,6 +9,7 @@ import { fetchWasteLookupJSON } from './actions/actions';
 
 startLogging();
 fetchWasteLookupJSON();
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 serviceWorker.unregister();

@@ -2,6 +2,7 @@ import React from 'react';
 
 import { AppHeader } from '../app-header';
 import { BaseReactComponent } from '../base-react-component';
+import { Favourites } from '../favourites';
 import { SearchBar } from '../search-bar';
 import { SearchResults } from '../search-results';
 
@@ -15,11 +16,14 @@ export default class App extends BaseReactComponent {
 
   render() {
     return (
-      <div>
+      <div className="app">
         <AppHeader />
         <section className="app__container">
-          <SearchBar />
-          <SearchResults />
+          <div className="app__search">
+            <SearchBar />
+            <SearchResults />
+          </div>
+          <Favourites />
         </section>
       </div>
     );
