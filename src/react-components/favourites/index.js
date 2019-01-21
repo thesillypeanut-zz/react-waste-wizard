@@ -22,7 +22,7 @@ export class Favourites extends BaseReactComponent {
         const items = favouritesList.map((item, index) => {
             const body = item.body.startsWith("&lt;ul&gt;")
             ? item.body
-            : '&lt;ul&gt; \n &lt;li&gt;' + item.body + '&lt;\/li&gt; \n&lt;\/ul&gt;';
+            : '&lt;ul&gt; \n &lt;li&gt;' + item.body + '&lt;\/li&gt; \n&lt;\/ul&gt;'; // eslint-disable-line
 
             return (
                 <li key={`favourite-${index}`} className="favourites-list__grid-container">

@@ -22,7 +22,7 @@ export class SearchResults extends BaseReactComponent {
         const items = queryResults.map((result, index) => {
             const body = result.body.startsWith("&lt;ul&gt;")
             ? result.body
-            : '&lt;ul&gt; \n &lt;li&gt;' + result.body + '&lt;\/li&gt; \n&lt;\/ul&gt;';
+            : '&lt;ul&gt; \n &lt;li&gt;' + result.body + '&lt;\/li&gt; \n&lt;\/ul&gt;'; // eslint-disable-line
 
             return (
                 <li key={`search-result-${index}`} className="search-results__grid-container">
