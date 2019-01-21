@@ -6,7 +6,7 @@ import { Favourites } from './react-components/favourites';
 import { SearchBar } from './react-components/search-bar';
 import { SearchResults } from './react-components/search-results';
 
-import './styles.css';
+import './App.css';
 
 
 export default class App extends BaseReactComponent {
